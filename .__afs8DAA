@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>U'Dis | Homepage</title>
+		<title>Astral by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -28,7 +28,7 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Home Page -->
+						<!-- Main Page -->
 							<article id="home" class="panel intro">
 								<header>
 									<h1>U'Dis</h1>
@@ -45,23 +45,25 @@
 				        <header>
 									<h2>Login</h2>
 								</header>
-								<form action="./loginAction.php" method="post">
+								<form action="#" method="post">
 									<div>
 										<div class="row">
 											<div class="col-6 col-12-medium">
-												<input type="text" name="Lusername" id="Lusername" placeholder="Username" />
+												<input type="text" name="Lusername" placeholder="Username" />
 											</div>
                                                                             
 											<div class="col-6 col-12-medium"></div>
                                                                                                       
                       <div class="col-6 col-12-medium">
-												<input type="password" name="Lpassword" id="Lpassword" placeholder="Password" />
+												<input type="password" name="Lpassword" placeholder="Password" />
 											</div>
                                                                                   
                                                                                   
 											<div class="col-12">
 												<input type="submit" value="Login" />
-											</div>                                               
+											</div>
+                                                                                  
+                                                                                  
 										</div>
 									</div>
 								</form>
@@ -72,7 +74,7 @@
 								<header>
 									<h2>Register</h2>
 								</header>
-								<form action="./registerAction.php" method="post">
+								<form action="#" method="post">
 									<div>
 										<div class="row">
                                                                                   
