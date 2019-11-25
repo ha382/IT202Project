@@ -22,12 +22,14 @@ $result = $stmt->fetch();
 $hashed = hash('sha512', $enteredPassword);
 if($result['username'] == $enteredUsername && strlen($enteredUsername) > 0 && $result['password'] == $hashed){ 
   
-  
+  //ADD NAME OF TABLE IN A COLUMN
   $stmt = $db->query("UPDATE TestUsers SET tableName = '$enteredTableName' WHERE username = '$enteredUsername' AND password = '$hashed'"); 
   
-  /*
-  $sql = "CREATE TABLE '$enteredUsername'.'$enteredTableName' (id INT(6) UBSIGNED AUTO_INCREMENT PRIMARY KEY, name VARCHAR(16) NOT NULL, score INT(16) NOT NULL))";
-  */
+  //PREFORMATS THE NAME OF THE TABLE TO BE CREATED
+  $formattedTableName = $enteredUsername.$enteredTableName;
+  //QUERY TO CREATE A SPECIFIED TABLE
+  $createQuery = "CREATE TABLE $formattedTableName (username VARCHAR(16), score INT(16) )";
+  $db->exec($createQuery);
   
   
   header("Location: createSuccess.html");
